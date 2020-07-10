@@ -1,5 +1,6 @@
 ﻿using exampleSolution_Data.Configurations;
 using exampleSolution_Data.Entities;
+using exampleSolution_Data.Extensions;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -11,10 +12,11 @@ namespace exampleSolution_Data.EF
     {
         public ShopDbContext(DbContextOptions options) : base(options)
         {
-           
+
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //Configure using Fluent API
             modelBuilder.ApplyConfiguration(new AppConfigConfiguration());
             modelBuilder.ApplyConfiguration(new AppUserConfiguration());
             modelBuilder.ApplyConfiguration(new AppRoleConfiguration());
@@ -31,13 +33,16 @@ namespace exampleSolution_Data.EF
             modelBuilder.ApplyConfiguration(new ProductTranslationConfiguration());
             modelBuilder.ApplyConfiguration(new PromotionConfiguration());
             modelBuilder.ApplyConfiguration(new TransactionConfiguration());
+
+            //Data seeding
+            modelBuilder.Seed();
             //base.OnModelCreating(modelBuilder);
         }
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
 
         public DbSet<AppConfig> AppConfigs { get; set; }
-     
+
         public DbSet<Cart> Carts { get; set; }
 
         public DbSet<CategoryTranslation> CategoryTranslations { get; set; }
@@ -57,7 +62,7 @@ namespace exampleSolution_Data.EF
 
         public DbSet<Transaction> Transactions { get; set; }
 
-       /* public DbSet<ProductImage> ProductImages { get; set; }*/
+        /* public DbSet<ProductImage> ProductImages { get; set; }*/
 
     }
 }
