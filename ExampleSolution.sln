@@ -10,9 +10,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exampleSolution_Data", "exampleSolution_Data\exampleSolution_Data.csproj", "{71521947-29F7-4854-BF0A-25CB58186A84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "exampleSolution_Data", "exampleSolution_Data\exampleSolution_Data.csproj", "{71521947-29F7-4854-BF0A-25CB58186A84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exampleSolution.Application", "exampleSolution.Application\exampleSolution.Application.csproj", "{75483D68-94B4-42DE-9F5A-C4995F6B295F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "exampleSolution.Application", "exampleSolution.Application\exampleSolution.Application.csproj", "{75483D68-94B4-42DE-9F5A-C4995F6B295F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopSolution.Utilities", "ShopSolution.Utilities\ShopSolution.Utilities.csproj", "{9D66C805-6105-4817-8A48-18B63122823B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopSolutionBackendApi", "ShopSolutionBackendApi\ShopSolutionBackendApi.csproj", "{F807967E-BFB7-49A3-B8B7-349D994947AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +36,14 @@ Global
 		{75483D68-94B4-42DE-9F5A-C4995F6B295F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75483D68-94B4-42DE-9F5A-C4995F6B295F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75483D68-94B4-42DE-9F5A-C4995F6B295F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D66C805-6105-4817-8A48-18B63122823B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D66C805-6105-4817-8A48-18B63122823B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D66C805-6105-4817-8A48-18B63122823B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D66C805-6105-4817-8A48-18B63122823B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F807967E-BFB7-49A3-B8B7-349D994947AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F807967E-BFB7-49A3-B8B7-349D994947AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F807967E-BFB7-49A3-B8B7-349D994947AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F807967E-BFB7-49A3-B8B7-349D994947AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
