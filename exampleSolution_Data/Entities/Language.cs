@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace exampleSolution_Data.Entities
+namespace ExampleSolution.Entities
 {
     public class Language
     {

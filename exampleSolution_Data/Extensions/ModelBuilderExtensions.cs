@@ -1,11 +1,11 @@
-﻿using exampleSolution_Data.Entities;
-using exampleSolution_Data.Enums;
+﻿using ExampleSolution.Entities;
+using ExampleSolution.Enums;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace exampleSolution_Data.Extensions
+namespace ExampleSolution.Extensions
 {
     public static class ModelBuilderExtensions
     {

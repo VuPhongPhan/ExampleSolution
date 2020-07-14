@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Identity;
 
-namespace exampleSolution_Data.Entities
+namespace ExampleSolution.Entities
 {
-    public class AppUser
+    public class AppUser : IdentityUser<Guid>
     {
-        public Guid UserId { get; set; }
         public string FirstName { get; set; }
 
         public string LastName { get; set; }

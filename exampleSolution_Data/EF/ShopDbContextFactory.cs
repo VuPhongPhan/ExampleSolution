@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace exampleSolution_Data.EF
+namespace ExampleSolution.EF
 {
     public class ShopDbContextFactory : IDesignTimeDbContextFactory<ShopDbContext>
     {

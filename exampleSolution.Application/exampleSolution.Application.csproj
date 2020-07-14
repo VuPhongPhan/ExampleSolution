@@ -15,11 +15,13 @@
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.5" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\exampleSolution_Data\exampleSolution_Data.csproj" />
     <ProjectReference Include="..\ShopSolution.Utilities\ShopSolution.Utilities.csproj" />
+    <ProjectReference Include="..\ShowSolution.ViewModels\ShowSolution.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>

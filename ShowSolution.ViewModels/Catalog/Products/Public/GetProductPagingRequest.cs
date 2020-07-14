@@ -1,12 +1,12 @@
-﻿using exampleSolution.Application.Dtos;
+﻿using ShowSolution.ViewModels.Common;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace exampleSolution.Application.Catalog.Products.Dtos.Public
+namespace ShowSolution.ViewModels.Catalog.Products.Public
 {
     public class GetProductPagingRequest : PagingRequestBase
     {
-        
+        public int? CategoryId { get; set; }
     }
 }

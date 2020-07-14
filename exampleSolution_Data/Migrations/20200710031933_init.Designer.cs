@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using exampleSolution_Data.EF;
+using ExampleSolution.EF;
 
-namespace exampleSolution_Data.Migrations
+namespace ExampleSolution.Migrations
 {
     [DbContext(typeof(ShopDbContext))]
     [Migration("20200710031933_init")]

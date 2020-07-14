@@ -1,12 +1,15 @@
-﻿using exampleSolution_Data.Configurations;
-using exampleSolution_Data.Entities;
-using exampleSolution_Data.Extensions;
+﻿using ExampleSolution.Configurations;
+using ExampleSolution.Entities;
+using ExampleSolution.Extensions;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
-namespace exampleSolution_Data.EF
+namespace ExampleSolution.EF
 {
     public class ShopDbContext : DbContext
     {
@@ -34,6 +37,13 @@ namespace exampleSolution_Data.EF
             modelBuilder.ApplyConfiguration(new PromotionConfiguration());
             modelBuilder.ApplyConfiguration(new TransactionConfiguration());
 
+
+            modelBuilder.Entity<IdentityUserClaim<Guid>>().ToTable("AppUserClaim");
+            modelBuilder.Entity<IdentityUserRole<Guid>>().ToTable("AppUserRoles").HasKey(x=>new { x.UserId, x.RoleId });
+            modelBuilder.Entity<IdentityUserLogin<Guid>>().ToTable("AppUserLogins").HasKey(x=>x.UserId);
+
+            modelBuilder.Entity<IdentityRoleClaim<Guid>>().ToTable("AppUserClaims");
+            modelBuilder.Entity<IdentityUserToken<Guid>>().ToTable("AppUserTokens").HasKey(x=>x.UserId);
             //Data seeding
             modelBuilder.Seed();
             //base.OnModelCreating(modelBuilder);

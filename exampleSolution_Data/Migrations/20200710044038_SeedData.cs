@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace exampleSolution_Data.Migrations
+namespace ExampleSolution.Migrations
 {
     public partial class SeedData : Migration
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ShopSolution.Utilities.Exceptions
+namespace ExampleSolution.Utilities.Exceptions
 {
     public class ShopException : Exception
     {

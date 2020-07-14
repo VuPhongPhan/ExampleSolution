@@ -1,11 +1,11 @@
-﻿using exampleSolution_Data.Entities;
+﻿using ExampleSolution.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace exampleSolution_Data.Configurations
+namespace ExampleSolution.Configurations
 {
     public class AppRoleConfiguration : IEntityTypeConfiguration<AppRole>
     {

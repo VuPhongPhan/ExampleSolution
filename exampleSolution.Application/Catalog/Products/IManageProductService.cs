@@ -1,8 +1,7 @@
-﻿using exampleSolution.Application.Catalog.Products.Dtos;
-using exampleSolution.Application.Dtos;
-using System;
+﻿using ShowSolution.ViewModels.Catalog.Products;
+using ShowSolution.ViewModels.Catalog.Products.Manage;
+using ShowSolution.ViewModels.Common;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace exampleSolution.Application.Catalog.Products

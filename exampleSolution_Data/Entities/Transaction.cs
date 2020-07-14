@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Transactions;
 
-namespace exampleSolution_Data.Entities
+namespace ExampleSolution.Entities
 {
     public class Transaction
     {

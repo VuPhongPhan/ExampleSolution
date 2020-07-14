@@ -1,13 +1,15 @@
-﻿using exampleSolution.Application.Catalog.Products.Dtos;
-using exampleSolution.Application.Dtos;
-using System;
+﻿using ShowSolution.ViewModels.Catalog.Products;
+using ShowSolution.ViewModels.Catalog.Products.Public;
+using ShowSolution.ViewModels.Common;
 using System.Collections.Generic;
-using System.Text;
+using System.Threading.Tasks;
 
 namespace exampleSolution.Application.Catalog.Products
 {
     public interface IPublicProductService
     {
-        PagedResult<ProductViewModel> GetAllByCategory(GetProductPagingRequest request);
+        Task<PagedResult<ProductViewModel>> GetAllByCategoryId(GetProductPagingRequest request);
+
+        Task<List<ProductViewModel>> GetAll();
     }
 }

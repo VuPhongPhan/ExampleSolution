@@ -1,12 +1,12 @@
-﻿using exampleSolution_Data.Entities;
-using exampleSolution_Data.Enums;
+﻿using ExampleSolution.Entities;
+using ExampleSolution.Enums;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace exampleSolution_Data.Configurations
+namespace ExampleSolution.Configurations
 {
     public class CategoryConfiguration : IEntityTypeConfiguration<Category>
     {

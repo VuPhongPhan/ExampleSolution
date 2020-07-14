@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace exampleSolution.Application.Dtos
+namespace ShowSolution.ViewModels.Common
 {
     public class PagingRequestBase
     {
         public int PageIndex { get; set; }
+
+        public int PageSize { get; set; }
     }
 }
