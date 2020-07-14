@@ -26,7 +26,9 @@ namespace ShopSolutionBackendApi
             options.UseSqlServer(Configuration.GetConnectionString(SystemConstants.MainconnectionString)));
 
             //Declare DI
+            services.AddTransient<exampleSolution.Application.Common.IStorageService, exampleSolution.Application.Common.FileStorageService>();
             services.AddTransient<exampleSolution.Application.Catalog.Products.IPublicProductService, exampleSolution.Application.Catalog.Products.PublicProductService>();
+            services.AddTransient<exampleSolution.Application.Catalog.Products.IManageProductService, exampleSolution.Application.Catalog.Products.ManageProductService>();
             
             services.AddControllersWithViews();
 

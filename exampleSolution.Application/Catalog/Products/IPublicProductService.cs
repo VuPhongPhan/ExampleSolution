@@ -10,6 +10,6 @@ namespace exampleSolution.Application.Catalog.Products
     {
         Task<PagedResult<ProductViewModel>> GetAllByCategoryId(GetProductPagingRequest request);
 
-        Task<List<ProductViewModel>> GetAll();
+        Task<List<ProductViewModel>> GetAll(string languageId);
     }
 }

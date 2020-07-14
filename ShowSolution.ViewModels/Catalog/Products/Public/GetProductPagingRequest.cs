@@ -7,6 +7,7 @@ namespace ShowSolution.ViewModels.Catalog.Products.Public
 {
     public class GetProductPagingRequest : PagingRequestBase
     {
+        public string LanguageId { get; set; }
         public int? CategoryId { get; set; }
     }
 }
